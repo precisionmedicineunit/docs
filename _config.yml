@@ -1,8 +1,9 @@
-title: SwissPedHealth Just the Docs
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: SwissPedHealth PipeDev Docs
+description: SwissPedHealth PipelineDev Docs made with Jeykll using the Just the Docs theme.
 theme: just-the-docs
 
 url: https://swisspedhealth-pipelinedev.github.io
 
 aux_links:
-  Template Repository: https://github.com/SwissPedHealth-PipelineDev/docs
+  Docs Repo: https://github.com/SwissPedHealth-PipelineDev/docs
+  Project: https://SwissPedHealth.ch
