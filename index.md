@@ -1,6 +1,7 @@
 ---
-title: Home
 layout: home
+title: Home
+nav_order: 1
 ---
 
 The is the inital documentation index from SwissPedHealth pipelines.
