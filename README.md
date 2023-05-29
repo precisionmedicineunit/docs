@@ -69,9 +69,9 @@ You should now be able to pull and push from that repo without the ["incorrect u
 
 
 
+## Just the Docs theme
 
-
-This is a *bare-minimum* template to create a [Jekyll] site that:
+We use the *bare-minimum* template to create a [Jekyll] site that:
 
 - uses the [Just the Docs] theme;
 - can be built and published on [GitHub Pages];
