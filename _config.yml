@@ -2,7 +2,7 @@ title: SwissPedHealth PipeDev Docs
 description: SwissPedHealth PipelineDev Docs made with Jeykll using the Just the Docs theme.
 url: https://swisspedhealth-pipelinedev.github.io
 theme: just-the-docs
-logo: "/assets/images/pipedev_logo_1.png"
+# logo: "/assets/images/pipedev_logo_1.png"
 
 aux_links:
   Docs Repo: https://github.com/SwissPedHealth-PipelineDev/docs
