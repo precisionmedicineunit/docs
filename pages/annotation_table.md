@@ -2,6 +2,7 @@
 layout: default
 title: Annotation table
 date: 2023-05-31 00:00:01
+nav_order: 5
 ---
 <head>
 <!-- function to resize table iframe to make height 100% to prevent nested scolling. -->
@@ -12,8 +13,7 @@ date: 2023-05-31 00:00:01
 </script>
 </head>
 
-<p class="meta">2023-05-31 - last update</p>
-<!-- date: 2022-01-30 00:00:01 -->
+Last update: 20230531
 
 <h1>Annotation table</h1>
 

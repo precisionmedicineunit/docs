@@ -65,14 +65,14 @@ Sensitive variables will only be stored within private offline project repositor
 We use a public development repository to ensure a clear separation of infrastructure development and private patient data.
 
 ## Contributors
+1. The SwissPedHealth-PipelineDev organisation on GitHub:
+[github.com/SwissPedHealth-PipelineDev](https://github.com/SwissPedHealth-PipelineDev). 
+2. This documentation repository is hosted on our GitHub organisation under `docs`:
+[github.com/SwissPedHealth-PipelineDev/docs](https://github.com/SwissPedHealth-PipelineDev/docs).
 
-This documentation repository is hosted on GitHub.
-You can contribute at:
-<https://github.com/SwissPedHealth-PipelineDev/docs>
-
-The SwissPedHealth-PipelineDev organisation on GitHub:
-<https://github.com/SwissPedHealth-PipelineDev>.
-You can request to become a member of the organisation via GitHub. 
+* You can request to become a member of the organisation via GitHub. 
+* You can make pull requests to the `docs` repository.
+* Alternatively, you can email us with comments directly.
 
 ## Documentation style
 
@@ -83,7 +83,7 @@ It uses Jekyll to build the static site which is then hosted on GitHub pages (or
 If Jekyll is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
 
 We currently allow GitHub pages to rebuild the site using Jekyll.
-However, we have also tested the method to push the pre-built `_site` should additional custom plugins be required; we aim to rely in minimum complexity. 
+We have also tested the method to push the pre-built `_site`, should additional custom plugins be required. However, we aim to rely on minimum complexity. 
 
 More specifically, the created site:
 
