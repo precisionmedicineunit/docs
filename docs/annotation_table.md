@@ -18,11 +18,11 @@ date: 2023-05-31 00:00:01
 <h1>Annotation table</h1>
 
 <img 
-src="{{ "../data/annotation_datasets/output/annotation_datasets_category.png" | relative_url }}"
+src="{{ "data/annotation_datasets/output/annotation_datasets_category.png" | relative_url }}"
 width="100%">
 
 <iframe 
-src="{{ "../data/annotation_datasets/output/annotation_datasets_table.html" | relative_url }}"
+src="{{ "data/annotation_datasets/output/annotation_datasets_table.html" | relative_url }}"
 width="100%"
 frameborder="0" scrolling="no" onload="resizeIframe(this)" />
 
