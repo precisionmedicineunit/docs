@@ -1,0 +1,41 @@
+---
+layout: default
+title: Annotation table
+date: 2023-05-31 00:00:01
+---
+<head>
+<!-- function to resize table iframe to make height 100% to prevent nested scolling. -->
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+</head>
+
+<p class="meta">2023-05-31 - last update</p>
+<!-- date: 2022-01-30 00:00:01 -->
+
+<h1>Annotation table</h1>
+
+<img src="{{ site.baseurl }}{% link data/annotation_datasets/output/annotation_datasets_category.png %}" width="100%">
+
+<iframe 
+src="{{ site.baseurl }}{% link data/annotation_datasets/output/annotation_datasets_table.html %}"
+width="100%"
+frameborder="0" scrolling="no" onload="resizeIframe(this)" />
+
+
+<!-- Without the script above, some of these methods may be useful: -->
+<!-- <iframe --> 
+<!-- src="{{ site.baseurl }}{% link data/annotation_datasets/output/annotation_datasets_table.html %}" -->
+<!-- width="100%" -->
+<!-- onload="this.height=screen.height;" -->
+<!-- ></iframe> --> 
+<!-- id="igraph" --> 
+<!-- height="5000" -->
+<!-- seamless="seamless" -->
+<!-- style="border:none;" --> 
+<!-- scrolling="no" -->
+<!-- onload="this.width=screen.width;" -->
+<!-- onload="this.width=screen.width;this.height=screen.height;" -->
+

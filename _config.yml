@@ -6,8 +6,8 @@ theme: just-the-docs
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
 
 aux_links:
-  Docs Repo: https://github.com/SwissPedHealth-PipelineDev/docs
-  Project: https://SwissPedHealth.ch
+  Github: https://github.com/SwissPedHealth-PipelineDev/docs
+  SPH.ch: https://SwissPedHealth.ch
 
 callouts:
   warning:

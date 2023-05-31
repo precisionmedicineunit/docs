@@ -29,9 +29,10 @@ REF_GRCh38="${DATABASE}/ref/grch38/GCA_000001405.15_GRCh38_no_alt_analysis_set.f
 
 * For all new permanent datasets, tools, etc. we add it to the index table.
 * We will assign the locations for all shared datasets, tools, etc.
+* See [annotation table](annotation_table) for the list of datasets. (This will be updated to include varaibles.)
 
 {: .note }
-We will automatically generate the master variables file from the index table which contains meta data about dates, versions, application, etc. for each of the tools, databases, etc. Therefore, the only manual curation required is for the index table, rather than individual variables file/files.
+We will automatically generate the master variables file from the index table which contains meta data about dates, versions, application, etc. for each of the tools, databases, etc. Therefore, the only manual curation required is for the index table, rather than individual variables file/files. To be integrated on [annotation table](annotation_table).
 
 ```
 +-- ..
