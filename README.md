@@ -4,6 +4,16 @@ This is the initial README for the PipelineDev documentation pages:
 <https://swisspedhealth-pipelinedev.github.io/docs/>.
 
 ## Cloning and keys
+### Summary
+Instead of the default method for cloning, I specify my username for github to clone:
+`git clone git@dylanlawless.github.com:SwissPedHealth-PipelineDev/docs.git`
+
+Then set the local user 
+`cd docs`
+`git config user.email personemail@addess.com`
+`git config user.name DylanLawless`
+
+### Datails of why this is done
 Since I work with others and use different accounts, machines, emails, here are some notes incase you or I need them.
 
 To push to multiple github accounts with different keys,
@@ -16,6 +26,7 @@ In the .ssh directory, the config file will assign the key to each git repositor
 
 * git clone git@custom.github.com:accout/repo.git
 * git clone git@github.com:accout/repo.git
+
 
 ``` bash 
 ## Set up the ssh config file
@@ -46,10 +57,10 @@ Then clone your repo using the custom Host instead of the default provided by gi
 # Clone using the correct Host as per config.
 # As shown at the end of this page, you may need to clone with submodules.
 # You can do by add the "--recursive" flag. 
-git clone --recursive git@dylanlawless.github.com:DylanLawless/DylanLawless.github.io.git
+git clone --recursive git@dylanlawless.github.com:SwissPedHealth-PipelineDev/docs.git
 
 # Set the local user here (instead of global, i.e. /Users/user/.gitconfig)
-cd "the clone repo dir"
+cd "the cloned repo dir"
 git config user.email personemail@addess.com
 git config user.name DylanLawless
 
