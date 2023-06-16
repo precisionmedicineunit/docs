@@ -69,3 +69,5 @@ While the SPHN organisation hierarchy is illustrated based on the final storage 
 ## Accessing BioMedIT
 > BioMedIT is open to all Swiss universities, research institutes, hospitals, service providers and other interested partners. In addition, and specifically within the framework of the two Swiss national initiatives SPHN and PHRT, the BioMedIT Network can be used for mono- and multi-site, individual and collaborative research projects. BioMedIT is a project of the SIB Swiss Institute of Bioinformatics
 (from <https://www.biomedit.ch>)
+
+![Alt text](https://www.biomedit.ch/.imaging/mte/biomedit-theme/large/dam/Illustrations/biomedit-network/BioMedIT-Graphic---SIB-3-line_with-title_Large.png/jcr:content/BioMedIT%20Graphic%20-%20SIB%203%20line_with%20title_Large.png "biomedit image")
