@@ -1,3 +1,11 @@
+---
+layout: default
+title: Layout
+date: 2023-06-16 00:00:01
+nav_order: 5
+---
+
+Last update: 20230531
 ## Data generation and control
 
 We rely on strict data control processes. 
