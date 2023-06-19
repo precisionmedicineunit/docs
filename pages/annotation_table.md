@@ -4,6 +4,14 @@ title: Annotation table
 date: 2023-05-31 00:00:01
 nav_order: 5
 ---
+<head>
+<!-- function to resize table iframe to make height 100% to prevent nested scolling. -->
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+</head>
 
 Last update: 20230531
 
