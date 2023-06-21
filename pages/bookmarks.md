@@ -10,6 +10,7 @@ Last update: 20230621
 An unstructured log of bookmarks that we use for guidance
 
 * GATK <https://gatk.broadinstitute.org/hc/en-us>
-* Genomics England: Bioinformatics and data science <https://www.genomicsengland.co.uk/bioinformatics>
+* Genomics England: bioinformatics and data science <https://www.genomicsengland.co.uk/bioinformatics>
+* Genomics England: technical documents <https://re-docs.genomicsengland.co.uk/further_reading/>
 * Genomics England: model report <http://gelreportmodels.genomicsengland.co.uk/>
 * NIH Biowulf HPC <https://hpc.nih.gov>
