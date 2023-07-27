@@ -1,3 +1,22 @@
+---
+layout: default
+title: FASTQ format data
+date: 2023-07-27 00:00:01
+nav_order: 5
+---
+
+Last update: 20230727
+
+{: .no_toc }
+<details open markdown="block">
+<summary>Table of contents</summary>
+{: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 ## FASTQ format data
 
 ### Summary 
