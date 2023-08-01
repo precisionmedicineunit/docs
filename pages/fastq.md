@@ -20,13 +20,29 @@ Last update: 20230727
 ## FASTQ format data
 
 ### Summary 
+* Analysis pipelines must account for the run directory name since it is possible that >1 file has the same filename and thus output may be overwritten.
 * WGS data from SMOC is produced currently with Novaseq6000.
 * h2030gc fastq file names:
     * `<SAMPLE_ID>_<NGS_ID>_<POOL_ID>_<S#>_<LANE>_<R1|R2>.fastq.gz`
 * Illumina fastq header:
-    * `@<instrument>:<run number>:<flowcell ID>:<lane>:<tile>:<x-pos>:<y-pos> <read>:<is`
+    * `@<instrument>:<run number>:<flowcell ID>:<lane>:<tile>:<x-pos>:<y-pos> <read>:<is filtered>:<control number>:<sample number>`
+    * For the Undetermined FASTQ files only, the sequence observed in the index read is written to the FASTQ header in place of the sample number. This information can be useful for troubleshooting demultiplexing.
 
-Analysis pipelines must account for the run directory name since it is possible that >1 file has the same filename and thus output may be overwritten.
+| Element	| Requirements	| Description	| 
+|---------------|---------------|---------------|
+| @	| @	| Each sequence identifier line starts with @ |
+| <instrument>	| Characters allowed: a–z, A–Z, 0–9 and underscore	| Instrument ID |
+| <run number>	| Numerical	| Run number on instrument |
+| <flowcell ID>	| Characters allowed: a–z, A–Z, 0–9	| 
+| Flowcell ID	| <lane>	| Numerical	| Lane number |
+| <tile>	| Numerical	| Tile number	| <x_pos>	| Numerical	| X coordinate of cluster	| 
+| <y_pos>	| Numerical	| Y coordinate of cluster	| 
+| <read>	| Numerical	| Read number. 1 can be single read or Read 2 of paired-end	| 
+| <is filtered>	| Y or N	| Y if the read is filtered (did not pass), N otherwise	| 
+| <control number>	| Numerical	| 0 when none of the control bits are on, otherwise it is an even number. On HiSeq X systems, control specification is not performed and this number is always 0. |
+| <sample number>	| Numerical	| Sample number from sample sheet |
+
+
 
 ### Details
 WGS data from SMOC is produced currently with Novaseq6000.
