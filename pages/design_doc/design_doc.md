@@ -5,7 +5,7 @@ has_children: true
 nav_order: 5
 ---
 
-# Index page for design documentuments
+# Index page for design documents
 
 Planned documents:
 1. [DNA germline short variant discovery](dna_germline_short.html)

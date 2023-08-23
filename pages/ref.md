@@ -17,6 +17,12 @@ Therefore, I will not write a long piece on it but instead add links for what I 
 <https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html>
 
 
+## old build
+We aim to use at least GRCh38 but for some old prepared data we must use the existing version with the reference genome used at that time.
+The mentioned refernce is "human_g1k_v37_decoy_chr.fasta".
+There are 4 common "hg19" references, and they are NOT directly interchangeable:
+<https://gatk.broadinstitute.org/hc/en-us/articles/360035890711-GRCh37-hg19-b37-humanG1Kv37-Human-Reference-Discrepancies>
+
 ## Reference preperation
 Once we have
 We map reads to GRCh38 or hg38 using the following:
@@ -27,3 +33,5 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 
 Once downloaded we need the index which is done by
 ` bwa index GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz`
+
+
