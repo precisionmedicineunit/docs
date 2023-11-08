@@ -12,3 +12,5 @@ ETH Zürich, Functional Genomics Center Zürich, Switzerland
 * edgeR/DeSeq2 pipelines for performing differential gene expression analysis 
     * flexibility to check for outliers or confounders.
 
+* Concise overview of different RNAseq normalization <https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html>
+
