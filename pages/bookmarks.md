@@ -14,3 +14,6 @@ An unstructured log of bookmarks that we use for guidance
 * Genomics England: technical documents <https://re-docs.genomicsengland.co.uk/further_reading/>
 * Genomics England: model report <http://gelreportmodels.genomicsengland.co.uk/>
 * NIH Biowulf HPC <https://hpc.nih.gov>
+* Fastq <https://en.wikipedia.org/wiki/FASTQ_format>
+* Fastq <https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211>
+* Fastq <https://help.basespace.illumina.com/files-used-by-basespace/fastq-files>
