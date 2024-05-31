@@ -8,6 +8,15 @@ nav_order: 5
 Last update: 20230727
 
 
+## Share
+
+Reference genome datasets are prepared and stored at:
+* `/poject/data/ref`
+    * Read-only
+    * Datamanager control
+    * Includes: README.md
+    * Includes: ref.sh creation
+
 ## GRCh38
 ### Choice
 
@@ -47,7 +56,6 @@ put ref.sh
 ```
 bwa index GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz
 ```
-
 
 ## Other builds
 We use GRCh38 but for some old prepared data we must use the existing version with the reference genome used at that time.

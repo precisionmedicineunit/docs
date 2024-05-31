@@ -2,6 +2,7 @@
 layout: default
 title: DNA germline short variant discovery
 parent: Design documents
+has_children: true
 ---
 
 <h1>Germline short variant discovery (SNPs + Indels) and interpretation</h1>
@@ -16,6 +17,7 @@ parent: Design documents
 </details>
 
 ---
+
 
 ## Introduction
 DNA sequence data is received from the sequencing facility in FASTQ format.
@@ -70,6 +72,17 @@ best practices workflow for
 [germline short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels) (open source licence [here](https://github.com/broadinstitute/gatk/blob/master/LICENSE.TXT)).
 This workflow will be designed to operate on a set of samples constituting a study cohort; 
 specifically, a set of per-sample BAM files that have been pre-processed as described in the GATK Best Practices for data pre-processing.
+
+The following pages go into details:
+* [GATK Duplicates](gatk_duplicates.html)
+* [GATK BQSR](gatk_bsqr.html)
+* [GATK Haplotype caller](gatk_hc.html)
+* [GATK Genomic db import](gatk_dbimport.html)
+* [GATK Genotyping gVCFs](gatk_genotypegvcf.html)
+* [GATK VQSR](gatk_vqsr.html)
+* [GATK Genotype refine](gatk_genotyperefine.html)
+* [Pre-annotation processing](pre_annoprocess.html)
+* [Pre-annotation MAF](pre_anno_maf.html)
 
 ### Annotation
 
