@@ -64,6 +64,46 @@ For a trio of samples (MOM, DAD, KID) with two libraries each (200 bp and 400 bp
   ```
 - **Mom’s and Kid's Data** similarly detailed.
 
+## An example
+
+While doing alignment with BWA I check that the info is updated like this: 
+
+`# This could go in variables.sh with more explicite names
+sm=$(echo ${sample_id} | awk -F '_' '{print $1}')
+pu=$(zcat ${FILE1} | awk 'NR==1 {split($1,a,":"); print a[3] "." a[4] "." "'$sm'
+"}')
+lb=$(echo ${sample_id} | awk -F '_' '{print $1 "_" $2}')
+pl="NovaSeq6000_WGS_TruSeq"
+
+echo "ID = ${sample_id}"
+echo "SM = ${sm}"
+echo "PL = ${pl}"
+echo "PU = ${pu}"
+echo "LB = ${lb}"
+
+# Define your read group
+rg="@RG\tID:${sample_id}\tSM:${sm}\tPL:${pl}\tPU:${pu}\tLB:${lb}"
+
+echo "RG = ${rg}"
+
+echo "starting bwa mem and samtools"
+bwa mem \
+        ${REF} \
+        ${FILE1} \
+        ${FILE2} \
+        -R $rg \
+        -v 1 -M -t 8 |\
+        samtools view --threads 8 -O BAM -o ${output_file}
+
+# check read group e.g.
+# samtools view -H HCY073_NGS000011412_NA_S20_L004.bam | grep '^@RG'
+# remove fq temp files
+# we can also use logs to see if we have any read group collision which should b
+e unique`
+
+Then in GATK when files are being merged later in BAM format, `MarkDuplicatesSpark` handles the read group info correctly from each individual sample for a subject. 
+
+
 **Conclusion**: Understanding and correctly implementing read group information is critical for high-quality genomic data processing, helping distinguish between various technical and biological factors that affect sequencing outcomes.
 
 
