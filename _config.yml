@@ -7,7 +7,7 @@ theme: just-the-docs
 
 aux_links:
   Github: https://github.com/SwissPedHealth-PipelineDev/docs
-  SwissPedHealth.ch: https://SwissPedHealth.ch
+  SwissPedHealth.ch: https://www.swisspedhealth.ch
 
 callouts:
   warning:
