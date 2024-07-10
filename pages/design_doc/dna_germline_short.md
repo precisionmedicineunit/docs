@@ -2,6 +2,7 @@
 layout: default
 title: DNA germline short variant discovery
 parent: Design documents
+has_children: true
 ---
 
 <h1>Germline short variant discovery (SNPs + Indels) and interpretation</h1>
@@ -16,6 +17,7 @@ parent: Design documents
 </details>
 
 ---
+
 
 ## Introduction
 DNA sequence data is received from the sequencing facility in FASTQ format.
@@ -55,6 +57,13 @@ You can read more about it on
 [Illumina's website](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html) and 
 [Heng Li's website](https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use).
 
+* HPC requirements
+    * Array of jobs - 1 task per fastq file
+    * 8 cpu per task
+    * 6 hours per task
+    * 12G memory per task
+    * Example testing: requires 2hr 15min for a 5.3Gb fastq pair
+
 ### Variant calling
 
 We will implement the genome analysis tool kit 
@@ -63,6 +72,17 @@ best practices workflow for
 [germline short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels) (open source licence [here](https://github.com/broadinstitute/gatk/blob/master/LICENSE.TXT)).
 This workflow will be designed to operate on a set of samples constituting a study cohort; 
 specifically, a set of per-sample BAM files that have been pre-processed as described in the GATK Best Practices for data pre-processing.
+
+The following pages go into details:
+* [GATK Duplicates](gatk_duplicates.html)
+* [GATK BQSR](gatk_bsqr.html)
+* [GATK Haplotype caller](gatk_hc.html)
+* [GATK Genomic db import](gatk_dbimport.html)
+* [GATK Genotyping gVCFs](gatk_genotypegvcf.html)
+* [GATK VQSR](gatk_vqsr.html)
+* [GATK Genotype refine](gatk_genotyperefine.html)
+* [Pre-annotation processing](pre_annoprocess.html)
+* [Pre-annotation MAF](pre_anno_maf.html)
 
 ### Annotation
 
@@ -73,15 +93,15 @@ Popular tools for applying annotation data to VCF format genetic data include:
 * NIRVANA [link: NIRVANA](https://illumina.github.io/NirvanaDocumentation/)
 * ANNOVAR [link: ANNOVAR](https://annovar.openbioinformatics.org/en/latest/)
 
-We aim to implement [VEP](http://www.ensembl.org/info/docs/tools/vep/index.html) with [Conda](https://docs.conda.io/en/latest/), but we are likely to test additional methods
+We are using [VEP](http://www.ensembl.org/info/docs/tools/vep/index.html) with [Conda](https://docs.conda.io/en/latest/), but we are likely to test additional methods
 ([licence](http://www.ensembl.org/info/about/legal/code_licence.html)).
-Additionally, these tools must be paried with a set of data sources containing the annotation information which will be applied to each variant.
+Additionally, these tools must be paired with a set of data sources containing the annotation information which will be applied to each variant.
 * [View our list of approx. 160 databases]({{ site.baseurl }}{% link pages/annotation_table.md %}).
 
 The variant consequence may be one of the defining criteria by which variants can 
 be included in analysis since they are _interpretable_ or of ostensibly _known significance_.
 
-The consequences provided by VEP can provide a simple refernce example to understand its function.
+The consequences provided by VEP can provide a simple reference example to understand its function.
 For example, HIGH impact variants might be a likely consequence for identifying candidates disease-causing:
 [Ensembl Variation - Calculated variant consequences](https://grch37.ensembl.org/info/genome/variation/prediction/predicted_data.html#consequences).\
 
@@ -123,4 +143,12 @@ For reference, alternative public implementations of ACMG guidelines can be foun
 please note these tools have not implemented here nor is any assertion of their quality offered.
 Examples of effective variant filtering and expected candidate variant yield in studies of rare human disease are provided by [pedersen2021effective].
 
+
+We plan to use our tools built for these requirements which are currently in review:
+* ACMGuru for automated clinical genetics evidence interpretation. 
+* ProteoMCLustR for unbiased whole-genome pathway clustering; 
+* SkatRbrain for statistical sequence kernel association testing with variant collapse.
+* UntangleR for pathway visualisation.
+* AutoDestructR for protein structure variant mapping. 
+All tools were designed for modular automated high-performance computing. 
 

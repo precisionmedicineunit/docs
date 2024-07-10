@@ -12,3 +12,8 @@ ETH Zürich, Functional Genomics Center Zürich, Switzerland
 * edgeR/DeSeq2 pipelines for performing differential gene expression analysis 
     * flexibility to check for outliers or confounders.
 
+* Concise overview of different RNAseq normalization <https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html>
+
+### Read length
+Phase 1 we did 75 nucleotide paired end sequencing. So to my knowledge the read length should be 75bp.
+Phase 2 we did 100PE mRNA-seq with 25M clusters per library. So the read length should be 100bp.

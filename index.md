@@ -12,7 +12,7 @@ style="display:center;">
     alt="Pipe dev logo image"
     width="70"
     />
-SwissPedHealth PipeDev Docs
+PipeDev docs
 </h1>
 
 ---
@@ -34,9 +34,15 @@ SwissPedHealth PipeDev Docs
 
 ## Welcome
 
-This is the documentation index for SwissPedHealth bioinformatic pipeline development.
+This is the documentation index for bioinformatic pipeline development.
 You can visit the project home page at
-<https://swisspedhealth.ch>.
+<https://www.swisspedhealth.ch>.
+
+## Quick start
+
+Most likely, you are looking for one of our design documents. 
+Check the **side bar** or go here: [Index page for design documents](pages/design_doc/design_doc.html).
+These pages describe the processes for our pipelines, start to finish, with links to supporting information.
 
 ## About
 
@@ -49,7 +55,7 @@ However, should any stable pipelines become routinely implemented, we are likely
 
 ### Content
 
-This documentation is made to track the public progress of SwissPedHealth pipeline development.
+This documentation is made to track the public progress of pipeline development.
 It includes information about the pipeline branches, for example DNA single variant detection, DNA CNV detection, RNA quantitative expression, etc.
 Many features are common to different branches (e.g. reference databases, reference datasets) are therefore listed separately form branch-specific content. 
 
