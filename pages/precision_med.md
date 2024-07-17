@@ -7,7 +7,9 @@ nav_order: 5
 
 Last update: 20240716
 
-[Download the Whitepaper](https://docs.google.com/viewer?url=${https://github.com/DylanLawless/precision_med_group/blob/main/whitepaper_1/whitepaper_1.1.pdf})
+Download the [whitepaper directly here](https://downgit.github.io/#/home?url=https://github.com/DylanLawless/precision_med_group/blob/main/whitepaper_1/whitepaper_1.1.pdf).
+
+Or visit the github [repository here](https://github.com/DylanLawless/precision_med_group/tree/main/whitepaper_1).
 
 ## Overview
 
