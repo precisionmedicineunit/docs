@@ -11,7 +11,7 @@ Last update: 20240716
 
 ## Overview
 
-The Precision Medicine Unit embodies a new era in pediatric healthcare. 
+The Precision Medicine Unit takes a new style in pediatric healthcare. 
 This whitepaper presents our systematic approach.
 It departs from the traditional project-based research model, adopting a continuous, structured workflow that ensures consistency, reliability, and reproducibility across all levels of operation.
 
