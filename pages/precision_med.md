@@ -15,11 +15,11 @@ The Precision Medicine Unit embodies a new era in pediatric healthcare.
 This whitepaper presents our systematic approach.
 It departs from the traditional project-based research model, adopting a continuous, structured workflow that ensures consistency, reliability, and reproducibility across all levels of operation.
 
+<img src="{{ "assets/images/precision_med_unit_management.png" | relative_url }}" width="100%">
 
+**Figure 1:** Precision medicine unit overview. The unit needs illustrate the management philosophy for minimal disruption for technical progress. 
 
 ## Why the PMU is unique
-
-Unlike traditional projects that are often tailor-made and lack systematic continuity, the PMU operates on a foundation of consensus work methods and shared philosophies. Each element of our work—from data collection to result interpretation—is interconnected within a meticulously designed network, ensuring that each piece of data and every analytical step is traceable and under constant scrutiny for compliance and efficiency.
 
 Unlike traditional research projects which often start from scratch, our unit operates on a model of systematic and structured workflow crucial for effective precision medicine. 
 This method ensures that every element of our work - from data collection to clinical application - is interconnected and efficiently managed. 
@@ -31,5 +31,8 @@ The structured approach of our Precision Medicine Unit ensures that all processe
 This model is crucial so that every element of our work remains connected so that we can run on the basis of single-source management and everything-as-code.
 
 
+<img src="{{ "assets/images/ivdr_auto_network_graph.png" | relative_url }}" width="100%">
 
-
+**Figure 2.** The database relationship network plot visually represents the interconnectedness of various elements within the database, in this case DNAsnake_v1.0. 
+The ability to make this plot demonstrates how different pieces of data are related and how they flow through the analysis pipeline. 
+This plot is made from variables which retrieve values from an SQL database and illustrates how the connectedness is used to audit any element at any stage of our analysis.
