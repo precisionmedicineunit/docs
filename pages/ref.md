@@ -11,7 +11,7 @@ Last update: 20230727
 ## Share
 
 Reference genome datasets are prepared and stored at:
-* `/poject/data/ref`
+* `/project/data/shared`
     * Read-only
     * Datamanager control
     * Includes: README.md

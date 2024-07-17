@@ -9,7 +9,6 @@ Last update: 20230801
 
 ## Forwarding git repos from github and gitlab
 
-This method was written by Vito.
 
 An easier way to sync git repos (dcc gitlab and github) to leomed: 
 * Using remote port forwarding via your local machine:
@@ -17,9 +16,9 @@ An easier way to sync git repos (dcc gitlab and github) to leomed:
 
 ```
 Host leomed
-  User vzanotelli
+  User username
   HostName login-ethsec.leomed.ethz.ch
-  ProxyJump vzanotelli@jump-ethsec.leomed.ethz.ch
+  ProxyJump username@jump-ethsec.leomed.ethz.ch
   ControlMaster auto
   ControlPath ~/.ssh/%r@%h:%p
   RemoteForward 7239 git.dcc.sib.swiss:22 # 7239 can be any unused port
