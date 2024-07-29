@@ -107,3 +107,16 @@ blockquote {
   padding-left: 15px;
   border-left: 3px solid $border-color;
 }
+
+.nav-columns {
+  background-color: $sidebar-color; /* Temporary background color to see the grid area */
+  // border: 1px solid grey; /* Temporary border to outline the grid container */
+}
+
+
+
+    // @media (min-width: 68px) { /* Adjusts to two columns on screens wider than 768px */
+    //     .nav-columns {
+    //       grid-template-columns: repeat(2, 1fr);
+    //   }
+    // }

@@ -1,12 +1,12 @@
 ---
 layout: default
 title: BWA
-date: 2023-07-27 00:00:01
+<!-- date: 2023-07-27 00:00:01 -->
 nav_order: 5
 ---
 
+# BWA
 Last update: 20230727
-## BWA
 
 * GATK: (How to) Map reads to a reference with alternate contigs like GRCH38 <https://gatk.broadinstitute.org/hc/en-us/articles/360037498992--How-to-Map-reads-to-a-reference-with-alternate-contigs-like-GRCH38>
 

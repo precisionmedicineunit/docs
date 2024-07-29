@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Annotation table
-date: 2023-05-31 00:00:01
 nav_order: 5
 ---
+
+<!-- 2023-05-31 00:00:01 -->
+
 <head>
 <!-- function to resize table iframe to make height 100% to prevent nested scolling. -->
 <script>

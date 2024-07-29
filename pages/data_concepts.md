@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Data concepts
-date: 2023-06-16 00:00:01
 nav_order: 5
 ---
 
+# Data concepts
 Last update: 20230619
 
 {: .no_toc }

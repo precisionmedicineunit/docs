@@ -28,7 +28,6 @@ PipeDev docs
 </details>
 ---
 
-
 <!-- width="100% -->
 
 
@@ -43,6 +42,19 @@ You can visit the project home page at
 Most likely, you are looking for one of our design documents. 
 Check the **side bar** or go here: [Index page for design documents](pages/design_doc/design_doc.html).
 These pages describe the processes for our pipelines, start to finish, with links to supporting information.
+
+## Full site navigation
+
+<div class="nav-columns specific-grid">
+  <ul>
+  {% assign pages = site.html_pages  %}
+  {% for page in pages %}
+    {% if page.title %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
 
 ## About
 
@@ -101,8 +113,12 @@ More specifically, the created site:
 You can read about how to maintain docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
 However, this `docs` repo is a standalone repository within the SwissPedHealth-PipelineDev github orgnaisation.
 
+{: .note }
+We can use the special styles for `{: .note }` and `{: .warning }` by adding this code before a paragraph.
+
 
 ![img]({{ "assets/images/logos/SwissPedHealth_Pipeline_Devs_wide_2.png" | relative_url }})
+
 
 ----
 

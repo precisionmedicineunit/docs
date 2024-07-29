@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Aggregate multiplexed data
-date: 2024-06-11 00:00:01
 nav_order: 5
 ---
 
+<!-- 2024-06-11 00:00:01 -->
+
+# Aggregate multiplexed data
 Last update: 20240611
 
 <!-- {: .no_toc } -->

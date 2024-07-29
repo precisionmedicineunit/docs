@@ -11,36 +11,38 @@ Last update: 20230707
 Author: Dylan Lawless
 
 <!-- ![Bioinformatic progress](./gant.png){width=70% height} -->
-\includegraphics[scale=0.4]{./gant.png}
+<!-- \includegraphics[scale=0.4]{./gant.png} -->
 
+{: .note }
+! See internal progress reports for everything after start date.
 
 ## Month: 202307 (start date)
 
-### Complete
-* SIB security training
-    * Responsible use of health data
-    * Responsible Use of BioMedIT
-* UZH VPN via Kispi
-* BioMedIT server access complete:
-    * project: MOMIC,  node: sciCOREmed (scicore), University of Basel
-    * project: Trans-omic analysis, node: Leonhard Med, Scientific IT Services (SIS), ETH Zurich
-* Editor environment: 
-    * scicore - done
-    * LeoMed - in progress
-* Decision on code management
-* Decision on containerisation
-* completion of SPSS exome paper
-* WES pipeline package for BioMedIT
+<!-- ### Complete -->
+<!-- * SIB security training -->
+<!--     * Responsible use of health data -->
+<!--     * Responsible Use of BioMedIT -->
+<!-- * UZH VPN via Kispi -->
+<!-- * BioMedIT server access complete: -->
+<!--     * project: MOMIC,  node: sciCOREmed (scicore), University of Basel -->
+<!--     * project: Trans-omic analysis, node: Leonhard Med, Scientific IT Services (SIS), ETH Zurich -->
+<!-- * Editor environment: --> 
+<!--     * scicore - done -->
+<!--     * LeoMed - in progress -->
+<!-- * Decision on code management -->
+<!-- * Decision on containerisation -->
+<!-- * completion of SPSS exome paper -->
+<!-- * WES pipeline package for BioMedIT -->
 
-### Planned
-* repository imports
-* reference database test
-* slurm sbatch test
-* gitlab test
-* snakemake test
-* conda/mamba test
-* ssh from kispi hardware
-* meetings with collaborating groups
+<!-- ### Planned -->
+<!-- * repository imports -->
+<!-- * reference database test -->
+<!-- * slurm sbatch test -->
+<!-- * gitlab test -->
+<!-- * snakemake test -->
+<!-- * conda/mamba test -->
+<!-- * ssh from kispi hardware -->
+<!-- * meetings with collaborating groups -->
 
  Project start: 20230701
 

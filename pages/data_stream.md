@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Data stream
-date: 2023-06-16 00:00:01
 nav_order: 5
 ---
+<!-- date: 2023-06-16 00:00:01 -->
 
+# Data stream
 Last update: 20230616
 
 ## Omic data sources
