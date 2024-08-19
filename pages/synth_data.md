@@ -7,9 +7,10 @@ nav_order: 5
 <!-- date: 2024-08-19 00:00:01 -->
 Last update: 20240819
 
+# Synthetic data
 The provided script demonstrates a practical approach for creating and utilising synthetic datasets in R, aimed at continuing data analysis development when access to original data is restricted due to legal or privacy concerns. This method allows developers and analysts to develop and test analytical models and data processing pipelines without compromising data governance policies.
 
-### Key Components of the Script:
+## Key Components of the Script:
 - **Libraries Used:**
   - `dplyr` for data manipulation.
   - `ggplot2` for data visualisation.
@@ -26,7 +27,7 @@ The provided script demonstrates a practical approach for creating and utilising
 - **Saving Visual Outputs:**
   - The `ggsave()` function is utilised to save generated plots to files, enabling easy distribution and review.
 
-### Purpose and Benefits:
+## Purpose and Benefits:
 - **Development Continuity:** This approach supports the continuous development of data analysis tools in scenarios where actual data cannot be used.
 - **Model Testing:** It facilitates preliminary testing of statistical models, ensuring they will perform as expected with real-world data.
 - **Privacy Compliance:** By using synthetic data, the method adheres to data privacy laws, ensuring that personal or sensitive information is not disclosed.
@@ -42,6 +43,8 @@ This technique is especially valuable in sectors such as healthcare or finance, 
 3. <img src="{{ "assets/images/patch3.png" | relative_url }}" width="80%">
    **Figure 3**: Categorical and numerical data comparison from the `iris` dataset showing Sepal Length and Species distribution. The top panels are density and bar plots for Sepal Length and Species, respectively. The bottom panel shows a boxplot distribution of Sepal Length across different Species.
 
+
+## Code example
 
 ```R
 library(dplyr)
