@@ -97,7 +97,7 @@ ${FILE2} \
 samtools view --threads 8 -O BAM -o ${output_file}
 
 # check read group e.g.
-# samtools view -H HCY073_NGS000011412_NA_S20_L004.bam | grep '^@RG'
+# samtools view -H AAA073_NGS000033312_NA_S20_L004.bam | grep '^@RG'
 # remove fq temp files
 # we can also use logs to see if we have any read group collision which should b
 e unique

@@ -220,7 +220,7 @@ patch3 <- (p6 + p7) / p8
 ggsave(patch3, file ="./patch3.png")
 ```
 
-### 3. example of data with no existing version
+### 3. Example of data with no existing version (medical)
 
 <img src="{{ "assets/images/patch4.png" | relative_url }}" width="80%">
 
