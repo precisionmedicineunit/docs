@@ -54,8 +54,8 @@ Read group definitions
 * LB = DNA preparation library identifier
 
 Read group sources
-* ID = sample_id , e.g. HCY073_NGS000011412_NA_S20_L004
-* SM = sample_id regex field 1, e.g. HCY073
+* ID = sample_id , e.g. AAA073_NGS000033312_NA_S20_L004
+* SM = sample_id regex field 1, e.g. AAA073
 * PL = Machine and library method, e.g. "NovaSeq6000_WGS_TruSeq", hardcoded - automate later
 * PU = {FLOWCELL_BARCODE}.{LANE}.{SAMPLE_BARCODE} which we can derive from fastq header 1 regex fields: 3.4., and sample_id regex field 1-2.
 * LB = sample_id regex field 1-2
