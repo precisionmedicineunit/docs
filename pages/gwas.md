@@ -30,6 +30,15 @@ This initial script converts joint genotyped cohort VCF files, which are split p
 ### Covariate and Phenotype Preparation (`plink_2_covar.sh`)
 This script prepares phenotype information and covariates, which are crucial for adjusting the GWAS analysis to prevent confounding results. It involves generating phenotype files from structured data sources and integrating them with genetic data files (FAM files). Additionally, Principal Component Analysis (PCA) is run on the genotype data to correct for population stratification, which is a critical step to ensure that genetic associations are not due to population structure differences.
 
+{: .note }
+**PCA**: The population structure of genetic data can be controlled in GWAS by applying PCA. 
+To simulate synthetic data or to understand the poplutation in cohort data we could compare it to population of classified ancestries
+such as the 1000 genomes project.
+In our exploration stages we produce the PCA bi-plot for 1000 Genomes Phase III - Version 2 (<https://www.biostars.org/p/335605/>) merged with our study data.
+
+<img src="{{ "assets/images/pca_biplot-new.png" | relative_url }}" width="100%">
+**Figure 1**. PCA from 1000 genomes project data by Kevin Blighe via biostars.org.
+
 ## Statistical Analysis
 
 ### Association Testing (`plink_3_assoc.sh`)
@@ -42,7 +51,7 @@ The final step involves visualising the results of the GWAS. The `plink_4_plot.s
 - **Manhattan Plot**: This plot visualises the -log10(p-values) of the association tests across all chromosomes, highlighting genomic regions that surpass the genome-wide significance threshold.
 - **QQ Plot**: This plot helps assess whether the p-values conform to the expected distribution under the null hypothesis of no association, which helps in identifying potential issues like population stratification, cryptic relatedness, or differential genotyping quality.
 
-The output from the `plink --assoc` command in PLINK, when used for a case/control analysis incorporating covariates like PCA and disease outcomes, results in a file typically containing several columns. Each column header represents a specific data type or statistical measure relevant to genetic association testing. Here’s a breakdown of each column and the type of data you can expect based on the example you provided:
+The output from the `plink --assoc` command in PLINK, when used for a case/control analysis incorporating covariates like PCA and disease outcomes, results in a file typically containing several columns. Each column header represents a specific data type or statistical measure relevant to genetic association testing. 
 
 ## Interpreting GWAS results (`plink --assoc` output columns)
 
@@ -75,6 +84,12 @@ Example results of a GWAS looks like this: `output_assoc_autosomalgenome.assoc`
 - **P**: P-value. This value indicates the probability of observing the test statistic as extreme as, or more extreme than, the value obtained if the null hypothesis (of no association) is true. Lower p-values suggest stronger evidence against the null hypothesis, indicating a potential association between the SNP and the trait.
 
 - **OR**: Odds ratio. This statistic represents the odds of the trait occurring (in this case, the disease) with the minor allele (A1) relative to the odds of the disease occurring with the major allele (A2). An OR less than 1 suggests a protective effect of the minor allele, whereas an OR greater than 1 suggests a risk effect. A value of `NA` or `0` can occur when the allele does not appear in one of the groups, making calculation of the odds ratio impossible or indefinite.
+
+![gif showing the qqman package for illustrating GWAS p-value results](https://github.com/stephenturner/qqman/blob/master/tools/qqman.gif?raw=true)
+**Figure 2**. Gif showing the qqman package for illustrating GWAS p-value results.
+
+Further invstigation of the association regions require others tools which are specific to your dataset.
+Commonly used tools including <http://locuszoom.org> and the Genotype-Tissue Expression (GTEx) Portal is a comprehensive public resource for researchers studying tissue and cell-specific gene expression and regulation (<https://www.gtexportal.org/home/>).
 
 ## Significant association interpretation
 
