@@ -51,6 +51,11 @@ A text file with no header line, and one line per variant with the following six
 * Allele 2 (corresponding to set bits in .bed; usually major)
 * Allele codes can contain more than one character. Variants with negative bp coordinates are ignored by PLINK.
 
+### Set SNP variant ID
+
+We can set the missing variant IDs in a bim file with plink `--set-missing-var-ids @_#\$r_\$a` to give:
+`1_10153_G_A` in the .bim SNPID column.
+
 ## 2. Downloading Ensembl mart data
 
 The first step involves acquiring gene position data. 

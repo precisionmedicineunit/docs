@@ -1,10 +1,10 @@
 ---
 layout: default
 title: PCA biplot 1000genomes
-date: 2024-08-27 00:00:01
 nav_order: 5
 ---
 
+<!-- date: 2024-08-27 00:00:01 -->
 
 # Preparing a public data reference panel from 1000 genomes project for PCA
 Last update: 20240807
