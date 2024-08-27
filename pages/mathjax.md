@@ -24,7 +24,11 @@ nav_order: 5
 
 - [`_includes/mathjax.html`]
 - [`_layouts/mathjax.html`]
-- [`assets/js/mathjax-script-type.js`](https://github.com/just-the-docs/just-the-docs-tests/blob/main/assets/js/mathjax-script-type.js)
+- [`assets/js/mathjax-script-type.js`]
+
+{: .note }
+For the source file `_includes/mathjax.html` from just-the-docs, we have updated the incorrectly set path from
+`src="/just-the-docs/assets/js/mathjax-script-type.js"` to the repositry root `src="/assets/js/mathjax-script-type.js"`.
 
 3.  To make MathJax available on *all* your web pages, add to `_config.yml`:
 
@@ -53,7 +57,7 @@ You can customise MathJax by adding further [options] in [`_includes/mathjax.htm
 
 [`_includes/mathjax.html`]: https://github.com/just-the-docs/just-the-docs-tests/blob/main/_includes/mathjax.html
 [`_layouts/mathjax.html`]: https://github.com/just-the-docs/just-the-docs-tests/blob/main/_layouts/mathjax.html
-[`assets/js/mathjax-script-type.js`](https://github.com/just-the-docs/just-the-docs-tests/blob/main/assets/js/mathjax-script-type.js)
+[`assets/js/mathjax-script-type.js`]: https://github.com/just-the-docs/just-the-docs-tests/blob/main/assets/js/mathjax-script-type.js)
 [options]: https://docs.mathjax.org/en/latest/web/configuration.html
 
 You can customise Just the Docs sites to support [MathJax],
