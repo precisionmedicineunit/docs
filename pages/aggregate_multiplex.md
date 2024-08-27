@@ -4,19 +4,9 @@ title: Aggregate multiplexed data
 nav_order: 5
 ---
 
-<!-- 2024-06-11 00:00:01 -->
-
 # Aggregate multiplexed data
-Last update: 20240611
 
-<!-- {: .no_toc } -->
-<!-- <details open markdown="block"> -->
-<!-- <summary>Table of contents</summary> -->
-<!-- {: .text-delta } -->
-<!-- - TOC -->
-<!-- {:toc} -->
-<!-- </details> -->
-<!-- --- -->
+Last update: 20240611
 
 The following content is modified from:
 > How should I pre-process data from multiplexed sequencing and multi-library designs?

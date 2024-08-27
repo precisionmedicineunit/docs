@@ -3,8 +3,7 @@ description: PipeDev Docs made with Jeykll using the Just the Docs theme.
 url: https://swisspedhealth-pipelinedev.github.io
 # remote_theme: just-the-docs/just-the-docs
 theme: just-the-docs
-# remote_theme: hydecorp/hydejack@v9
-# logo: "/assets/images/pipedev_logo_1.png"
+# remote_theme: hydecorp/hydejack@v9 logo: "/assets/images/pipedev_logo_1.png"
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
 
 aux_links:
@@ -85,3 +84,6 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+# add mathjax to all pages
+# math: mathjax
