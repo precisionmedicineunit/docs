@@ -4,7 +4,6 @@ title: Benchmarking pipeline output
 nav_order: 5
 ---
 
-<!-- date: 2023-07-17 00:00:01 -->
 Last update: 20240819
 
 # Benchmarking pipeline output
