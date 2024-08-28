@@ -46,7 +46,8 @@ _Overview of Rare Variant Analysis of Whole Genome Sequencing Association Studie
 
 This discussion refers to code in the main ACAT function found at <https://github.com/yaowuliu/ACAT>.
 
-<img src="{{ site.baseurl }}{% link assets/images/acat_fig_1.jpg %}" width="80%" style="display: block; margin: auto;">
+<img src="{{ "assets/images/acat/acat_fig_1.jpg" | relative_url }}" width="80%">
+
 
 **Figure 1.** Summary of the Proposed Methods ACAT, ACAT-V, and ACAT-O and the Relationship Among Them. From the ACAT paper
 
@@ -86,7 +87,7 @@ ACAT is designed to combine p-values from multiple variants or tests rather than
 
 To do this see the STAAR framework for this.
 
-<img src="{{ site.baseurl }}{% link assets/images/acat_fig_2.png %}" width="80%" style="display: block; margin: auto;">
+<img src="{{ "assets/images/acat/acat_fig_2.png" | relative_url }}" width="80%">
 
 **Figure 2.** Slide from presentation of ACAT method.
 
@@ -107,7 +108,7 @@ The SCANG-STAAR method has two main procedures: SCANG-STAAR-S and SCANG-STAAR-B.
 
 SCANG-STAAR also provides the SCANG-STAAR-O procedure, based on an omnibus p-value of SCANG-STAAR-S and SCANG-STAAR-B calculated by the ACAT method. However, unlike STAAR-O, the ACAT-V test is not incorporated into the omnibus test because it is designed for sparse alternatives, and as a result, it tends to detect the region with the smallest size that contains the most significant variant in the dynamic window procedure.
 
-<img src="{{ site.baseurl }}{% link assets/images/acat_fig_3.png %}" width="80%" style="display: block; margin: auto;">
+<img src="{{ "assets/images/acat/acat_fig_3.png" | relative_url }}" width="80%">
 
 **Figure 3.** Slide from presentation of ACAT application in STAAR.
 
