@@ -284,10 +284,10 @@ p_combined <- grid.arrange(p_original_scores, p_p_values, ncol = 1)
 print(p_combined)
 
 # Save the combined plot (optional)
-# ggsave("./images/p_combined.pdf", plot = p_combined) #, width = 8, height = 12)
+# ggsave("./images/p_combined.png", plot = p_combined) #, width = 8, height = 12)
 ```
 
-<img src="{{ "assets/images/acat/p_combined.pdf" | relative_url }}" width="80%">
+<img src="{{ "assets/images/acat/p_combined.png" | relative_url }}" width="80%">
 
 ```R
 
@@ -322,10 +322,10 @@ print(p_qqplot)
 # Combine the two plots
 p_hist_qq <- grid.arrange(p_histogram, p_qqplot, ncol = 1)
 print(p_hist_qq)
-# ggsave("./images/p_hist_qq.pdf", plot = p_hist_qq)
+# ggsave("./images/p_hist_qq.png", plot = p_hist_qq)
 ```
 
-<img src="{{ "assets/images/acat/p_hist_qq.pdf" | relative_url }}" width="80%">
+<img src="{{ "assets/images/acat/p_hist_qq.png" | relative_url }}" width="80%">
 
 ```R
 
@@ -352,10 +352,10 @@ p_acat <- ggplot(acat_results_df, aes(x = Variant, y = -log10(ACAT_P_Value))) +
 
 p_acat
 
-# ggsave("./images/p_acat.pdf", plot = p_acat)
+# ggsave("./images/p_acat.png", plot = p_acat)
 ```
 
-<img src="{{ "assets/images/acat/p_acat.pdf" | relative_url }}" width="80%">
+<img src="{{ "assets/images/acat/p_acat.png" | relative_url }}" width="80%">
 
 ```R
 
@@ -516,7 +516,12 @@ EnhancedVolcano(
 )
 
 # p_gtex_gene_median_tpm_volcano
-# 8x6 pdf
+# 8x6 png
+```
+
+<img src="{{ "assets/images/acat/p_gtex_gene_median_tpm_volcano.png" | relative_url }}" width="50%">
+
+```R
 
 # FC weights ----
 # To convert the p-values from your differential expression analysis into weights scaled between 0 and 1, you can invert the p-values and then normalize them so that they sum up to 1. This approach assigns higher weights to genes with lower p-values (indicating higher significance), which aligns with your goal of giving more weight to genes more likely to be causal.
@@ -536,6 +541,11 @@ ggplot(fit_results, aes(x = ScaledWeights)) +
 	theme_minimal()
 
 # p_gtex_gene_median_tpm_scaledweight
+```
+
+<img src="{{ "assets/images/acat/p_gtex_gene_median_tpm_scaledweight.png" | relative_url }}" width="80%">
+
+```R
 
 # Weights in ACAT ----
 # we want the top ten volcano_data$GeneDescription ranked on fit_results$ScaledWeights, which we can then use the top ten names from volcano_data$GeneDescription to pretend that they consist of 50 variants from the df variant_data_melted. the variant_data_melted$variants are numbered 1-50 so lets give 10 variants to each one volcano_data$GeneDescription (gene name).
@@ -616,9 +626,9 @@ p_acat_weight_GTEx <- acat_results |>
 
 p_acat_weight_GTEx
 # Save the combined plot (optional)
-# ggsave("./images/p_acat_weight_GTEx_test.pdf", plot = p_acat_weight_GTEx)
+# ggsave("./images/p_acat_weight_GTEx_test.png", plot = p_acat_weight_GTEx)
 ```
 
-<img src="{{ "assets/images/acat/p_acat_weight_GTEx_test.pdf" | relative_url }}" width="80%">
+<img src="{{ "assets/images/acat/p_acat_weight_GTEx_test.png" | relative_url }}" width="80%">
 
 
