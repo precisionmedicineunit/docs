@@ -6,9 +6,6 @@ nav_order: 5
 ---
 Last update: 20230616
 
-
-
-
 ## Hardware
 Example comparisons
 
