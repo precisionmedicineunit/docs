@@ -35,7 +35,7 @@ PipeDev docs
 
 This is the documentation index for bioinformatic pipeline development.
 You can visit the project home page at
-<https://www.swisspedhealth.ch>.
+<https://www.precisionmedicineunit.ch>.
 
 ## Quick start
 
@@ -83,10 +83,10 @@ Sensitive variables will only be stored within private offline project repositor
 We use a public development repository to ensure a clear separation of infrastructure development and private patient data.
 
 ## Contributors
-1. The SwissPedHealth-PipelineDev organisation on GitHub:
-[github.com/SwissPedHealth-PipelineDev](https://github.com/SwissPedHealth-PipelineDev). 
+1. The PrecisionMedicineUnit organisation on GitHub:
+[github.com/precisionmedicineunit](https://github.com/precisionmedicineunit). 
 2. This documentation repository is hosted on our GitHub organisation under `docs`:
-[github.com/SwissPedHealth-PipelineDev/docs](https://github.com/SwissPedHealth-PipelineDev/docs).
+[github.com/PrecisionMedicineUnit/docs](https://github.com/PrecisionMedicineUnit/docs).
 
 * You can request to become a member of the organisation via GitHub. 
 * You can make pull requests to the `docs` repository.
@@ -111,7 +111,7 @@ More specifically, the created site:
 [Browse the theme documentation][Just the Docs] to learn more about how to use this theme.
 
 You can read about how to maintain docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-However, this `docs` repo is a standalone repository within the SwissPedHealth-PipelineDev github orgnaisation.
+However, this `docs` repo is a standalone repository within the PrecisionMedicineUnit github orgnaisation.
 
 {: .note }
 We can use the special styles for `{: .note }` and `{: .warning }` by adding this code before a paragraph.
