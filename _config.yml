@@ -1,14 +1,14 @@
-title: PipeDev Docs
-description: PipeDev Docs made with Jeykll using the Just the Docs theme.
-url: https://swisspedhealth-pipelinedev.github.io
+title: PrecisionMedicineUnit Docs
+description: PrecisionMedicineUnit Docs made with Jeykll using the Just the Docs theme.
+url: https://precisionmedicineunit.github.io
 # remote_theme: just-the-docs/just-the-docs
 theme: just-the-docs
 # remote_theme: hydecorp/hydejack@v9 logo: "/assets/images/pipedev_logo_1.png"
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
 
 aux_links:
-  Github: https://github.com/SwissPedHealth-PipelineDev/docs
-  SwissPedHealth.ch: https://www.swisspedhealth.ch
+  Github: https://github.com/precisionmedicineunit/docs
+  precisionmedicineunit.ch: https://www.precisionmedicineunit.ch
 
 callouts:
   warning:
